@@ -70,5 +70,77 @@ Maximum in the list
 num=[96,97,99,120,163]
 print(max(num))
 '''
+'''
 l=[1,5,9]
 print(sum(l), max(l), min(l))
+'''
+'''
+aList=["PYnative", [4,8,12,16]]
+print(aList[0][1])
+print(aList[1][3])
+'''
+'''
+marks = [
+    [78,76,94,86,88],
+    [91,71,98,65,76],
+    [95,45,78,52,49]
+]
+for i in range(3):
+    totalMarks=0
+    for j in range(5):
+        totalMarks=totalMarks+marks[i][j]
+avgMarks=totalMarks/5
+print(str(i+1),int(avgMarks))
+'''
+'''
+Sum of even and odd numbers
+elements=[23,14,56,12,19,9,15,25,31,42,43]
+odd_sum=0
+even_sum=0
+for sub in elements:
+    for item in str(sub):
+        if int(item)%2==0:
+            even_sum+=int(item)
+        else:
+            odd_sum+=int(item)
+print(odd_sum)
+print(even_sum)
+'''
+'''
+l=[23,14,56,12,19,9,15,25,31,42,43]
+sumodd=0
+sumeven=0
+odd=[]
+even=[]
+allsum=0
+l2=len(l)
+for i in l:
+    allsum+=i
+    if(i%2==0):
+        sumeven+=i
+        even.append(i)
+        length=len(even)
+    else:
+        sumodd+=i
+        odd.append(i)
+        l2=len(odd)
+print("count odd=", l2)
+print("count sum=", length)
+print("sum of odd=", sumodd)
+print("sum of even=", sumeven)
+'''
+#Extend() function to add the elements to the list.
+#Elememts of lists are stored in continuous memory location.
+
+'''
+Calculating average
+list1=[80,66,94,87,99,95]
+print(sum(list1)/len(list1))
+'''
+'''
+list1=["Python", "Java", "c", "C++", "C"]
+print(min(list1))
+'''
+list1=["tom", "mary", "simon"]
+list1.insert(5,8)
+print(list1)
