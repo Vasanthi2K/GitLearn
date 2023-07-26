@@ -141,6 +141,57 @@ print(sum(list1)/len(list1))
 list1=["Python", "Java", "c", "C++", "C"]
 print(min(list1))
 '''
+'''
 list1=["tom", "mary", "simon"]
 list1.insert(5,8)
 print(list1)
+'''
+
+
+'''
+Counting the occurance of an element without using count()
+
+list1=[3,4,5,20,5,25,1,5,3]
+count=0
+for i in list1:
+    if i == 5:
+        count+=1
+print(count)
+
+'''
+
+'''
+Finding the maximun number without inbuilt function
+list=[10,12,15,4,96,105]
+max = 0
+for i in list:
+    if i > max:
+        max = i
+print (max)
+'''
+
+'''
+Findind the smallest number without using min()
+list=[10,12,15,4,96,105,-9,-999]
+min = 1000
+for i in list:
+    if i < min:
+        min = i
+print (min)
+'''
+'''
+Printing a num in reverse order
+num = (input())
+for i in reversed(num):
+        print(i, end='')
+'''
+#printing numbers in reverse order without using reverse()
+num=int(input())
+rev=0
+while num>0:
+    remainder = num%10
+    rev = (rev*10)+remainder
+    num = num//10
+print(rev)
+'''
+print(1%10)
