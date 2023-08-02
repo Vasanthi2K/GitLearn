@@ -185,7 +185,8 @@ num = (input())
 for i in reversed(num):
         print(i, end='')
 '''
-#printing numbers in reverse order without using reverse()
+'''
+printing numbers in reverse order without using reverse()
 num=int(input())
 rev=0
 while num>0:
@@ -194,4 +195,67 @@ while num>0:
     num = num//10
 print(rev)
 '''
+'''
 print(1%10)
+'''
+
+'''
+1. To find maximum number among elements in list [Don't use inbuilt method]
+list=[10,12,15,4,96,105]
+max = 0
+for i in list:
+    if i > max:
+        max = i
+print (max)
+'''
+'''
+#2. To find minimum number among elements in list [Don't use inbuilt method]
+list=[10,12,15,4,96,105]
+min = 10000
+for i in list:
+    if i < min:
+        min = i
+print (min)
+'''
+'''
+#3. You have been given a list of words and you have to sort them in alphabetical order
+The sorted() function is a built-in function in python that takes any iterable like a list and 
+returns a new sort list, which is alphabetically sorted.
+
+str=("d,", "a", "f", "c", "b", "e")
+x=sorted(str, reverse = False)
+print(x)
+'''
+'''
+#Method2
+str = ["d","a","b","e"]
+str.sort()
+print(str)
+'''
+'''
+Program to remove duplicate elements and return list of unique elements from a list
+a = [1,2,3,4,4,2,1,6,7]
+res = [*set(a)]
+print(res)
+
+a = [1,3,3,8,9,1,2,6,2]
+res = list(set(a))
+print(res)
+'''
+
+'''
+program to remove all the negative numbers from a list
+a = [1,-2,3,-4,-6,7]
+res = []
+for i in a:
+    if i > 0:
+        res.append(i)
+print(res)
+'''
+#Program to return odd numbers only.
+a = [1,2,3,4,6,7,10]
+res = []
+for i in a:
+    if i % 2 != 0:
+        res.append(i)
+print(res)
